@@ -1,0 +1,152 @@
+.heart {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 0 10px;
+
+  position: absolute;
+  left: 45%; top: 45%;
+
+  background-color: red;
+
+  transform: rotate(-45deg);
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+
+  position: absolute;
+  height: 50px;
+  width: 50px;
+
+  background-color: red;
+  border-radius: 50%;
+}
+
+.heart:before {
+  top: -25px;
+  left: 0;
+}
+
+.heart:after {
+  left: 25px;
+  top: 0;
+}
+.center {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.link {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #8b1e3f;
+}
+
+.heart {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 0 10px;
+
+  position: absolute;
+  left: 45%; top: 45%;
+
+  background-color: red;
+
+  transform: rotate(-45deg);
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+
+  position: absolute;
+  height: 50px;
+  width: 50px;
+
+  background-color: red;
+  border-radius: 50%;
+}
+
+.heart:before {
+  top: -25px;
+  left: 0;
+}
+
+.heart:after {
+  left: 25px;
+  top: 0;
+}
+.heart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/* само сердце */
+.heart-shape {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: #8b1e3f;
+    transform: rotate(-45deg);
+    animation: pulse 1.2s infinite;
+}
+
+
+/* 1 элемент (m9.jpeg) */
+.media-column img:nth-child(1) {
+    width: 240px;
+}
+
+/* 2 элемент (video m10) */
+.media-column video:nth-child(2) {
+    width: 200px;
+}
+
+/* 3 элемент (m11.jpeg) */
+.media-column img:nth-child(3) {
+    width: 260px;
+}
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* базовый стиль */
+.left img, .left video,
+.right img, .right video {
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* 🔵 ЛЕВАЯ КОЛОНКА (разные размеры) */
+.left img:nth-child(2) {
+    width: 220px;
+}
+
+.left video:nth-child(1) {
+    width: 180px;
+}
+
+.left video:nth-child(3) {
+    width: 260px;
+}
+
+/* 🔴 ПРАВАЯ КОЛОНКА (разные размеры) */
+.right img:nth-child(1) {
+    width: 200px;
+}
+
+.right video:nth-child(2) {
+    width: 240px;
+}
+
+.right img:nth-child(3) {
+    width: 170px;
+}
